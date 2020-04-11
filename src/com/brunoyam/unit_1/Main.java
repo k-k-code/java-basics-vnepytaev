@@ -23,18 +23,20 @@ public class Main {
 
      */
 
-    private static int[] oneDimensionArray = Generator.getOneDimensionArray();
+    private static int[] oneDimensionArray = Generator.getOneDimensionArray();// объявляем целочисл массив данных
+    //oneDimensionArray, через оператор доступа (.) обращаемся к методу getOneDimensionArray класса
+    // Generetor
 
     private static void level1() {
         /*
          Выберите подходящий тип переменных, в которые будут сохраняться значения.
          Не забудьте, что метод, вычисляющий значение переменной должен возвращать тот же тип.
         */
-        /*тип*/ minValue = findMinValue(oneDimensionArray);
-        /*тип*/ maxValue = findMaxValue(oneDimensionArray);
-        /*тип*/ sumOfValues = sumValues(oneDimensionArray);
-        /*тип*/ firstPositiveIndex = getFirstPositiveIndex(oneDimensionArray);
-        /*тип*/ firstNegativeIndex = getFirstNegativeIndex(oneDimensionArray);
+        int minValue = findMinValue(oneDimensionArray);
+        int maxValue = findMaxValue(oneDimensionArray);
+        long sumOfValues = sumValues(oneDimensionArray);
+        byte firstPositiveIndex = getFirstPositiveIndex(oneDimensionArray);
+        byte firstNegativeIndex = getFirstNegativeIndex(oneDimensionArray);
 
 
         System.out.println("First part");
@@ -55,8 +57,8 @@ public class Main {
          Выберите подходящий тип переменных, в которые будут сохраняться значения.
          Не забудьте, что метод должен возвращать значение тогот же типа.
         */
-        /*тип*/ lastPositiveIndex = getLastPositiveIndex(oneDimensionArray);
-        /*тип*/ lastNegativeIndex = getLastNegativeIndex(oneDimensionArray);
+        int lastPositiveIndex = getLastPositiveIndex(oneDimensionArray);
+        int lastNegativeIndex = getLastNegativeIndex(oneDimensionArray);
         byte[] positiveNegativeNumber = countPositiveNegative(oneDimensionArray);
 
         System.out.println("last positive index: " + lastPositiveIndex);
@@ -66,46 +68,58 @@ public class Main {
     }
 
     /* Укажите тип значения, которое будет возвращать метод*/
-    private static /*тип*/ findMinValue(int[] arrayOfValues) {
+    private static int findMinValue(int[] arrayOfValues) {
         /* Укажите тип переменной */
-        /*тип*/ minValue = arrayOfValues[0];
+        int minValue = arrayOfValues[0];
         /*
            Используя цикл for переберите все значения массива и сохраните минимальное в переменную minValue.
          */
+        for (int i = 0; i < arrayOfValues.length;i--)
+        int i = minValue;
         return minValue;
     }
 
     /* Укажите тип значения, которое будет возвращать метод*/
-    private static /*тип*/ findMaxValue(int[] arrayOfValues) {
+    private static int findMaxValue(int[] arrayOfValues) {
         /* Укажите тип переменной */
-        /*тип*/ maxValue = arrayOfValues[0];
+        int maxValue = arrayOfValues[0];
         /*
            Используя цикл for переберите все значения массива и сохраните максимальное в переменную maxValue.
          */
-        return maxValue;
+        for (int i = 0; i > arrayOfValues.length;i++)
+            int i = maxValue;
+            return maxValue;
     }
 
     /* Укажите тип значения, которое будет возвращать метод*/
-    private static /*тип*/ sumValues(int[] arrayOfValues) {
+    private static long sumValues(int[] arrayOfValues) {
         /* Укажите тип переменной */
-        /*тип*/ sum = 0;
+        long sum = 0;
         /* Используя цикл for переберите все значения массива, просуммируйте и сохраните сумму всех значений в переменную sum. */
+        for (int i < arrayOfValues; i++)
+            sum = sum + arrayOfValues(i);
         return sum;
     }
 
     /* Укажите тип значения, которое будет возвращать метод*/
-    private static /*тип*/ getFirstPositiveIndex(int[] arrayOfValues) {
+    private static byte getFirstPositiveIndex(int[] arrayOfValues) {
         /* Укажите тип переменной */
-        /*тип*/ firstPositiveIndex = 0;
+        byte firstPositiveIndex = 0;
         /* Используя цикл while найдите индекс первого положительного значения в массиве и сохраните в переменную firstPositiveIndex */
+        while ()
+
+
         return firstPositiveIndex;
     }
 
     /* Укажите тип значения, которое будет возвращать метод*/
-    private static /*тип*/ getFirstNegativeIndex(int[] arrayOfValues) {
+    private static byte getFirstNegativeIndex(int[] arrayOfValues) {
         /* Укажите тип переменной */
-        /*тип*/ firstNegativeIndex = 0;
+        byte firstNegativeIndex = 0;
         /* Используя цикл while найдите первое отрицательное значение и сохраните в переменную firstNegativeIndex */
+        while ()
+
+
         return firstNegativeIndex;
     }
 
